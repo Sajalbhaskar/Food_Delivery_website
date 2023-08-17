@@ -1,0 +1,252 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* CSS variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* top:0px;
+    left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Navigation Bar: Logo and Image  */
+#logo{
+    margin: 6px 7px;
+}
+#logo img{
+    margin: 4px 5px;
+    height: 71px;
+    width: 69px;
+}
+/* Navigation Bar: list styling  */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 22px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 22px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background: url(bg5.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 537px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    color: white;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 3px 6px;
+    height: 57vh;
+    width: 30vw;
+    padding: 34px;
+    border-radius: 28px;
+    background: #f5f4f4;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* About------> */
+#about .aboutUS{
+    display: flex;
+}
+#about::before{
+    content: '';
+    background: url(bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 43%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#about img{
+    height: 400px;
+    width: 400px;
+    margin: 40px 61px;
+}
+#about p{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    margin: 36px 0px;
+    padding: 8px 52px;
+
+}
+
+/* Clients Section---------> */
+#client-section{
+    height: 344px;
+    position: relative;
+}
+#client-section::before{
+    content: '';
+    background: url(bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-items{
+    padding: 34px;
+}
+#clients img{
+    height: 89px;
+}
+
+/* Contact Section------> */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(contact.jpg) no-repeat center center/cover ;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 20%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Hubballi', cursive;
+    font-size: 4.3rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    font-size: 1.1rem;
+    margin: 15px;
+    border: 2px solid white;
+    color: white;
+    background: #211a1a;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid rgb(51, 52, 51);
+}
+
